@@ -1,6 +1,4 @@
 def mean(num_list):
-    if any([isinstance(x, complex) for x in num_list]):
-        return NotImplemented
     try:
         return sum(num_list)/len(num_list)
     except ZeroDivisionError as detail :
